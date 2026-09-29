@@ -1,0 +1,22 @@
+{
+  "configure_sbiepay_merchant": "Configure SBI ePay merchant",
+  "configure_sbiepay_merchant_description": "Set the SBI ePay merchant code and merchant key used to collect payments for this facility.",
+  "sbiepay_merchant": "SBI ePay merchant",
+  "sbiepay_merchant_code": "Merchant code",
+  "sbiepay_merchant_key": "Merchant key",
+  "sbiepay_merchant_key_description": "The AES encryption key issued by SBI ePay for this merchant. It is stored securely and never shown again.",
+  "sbiepay_merchant_key_masked": "Merchant key (masked)",
+  "sbiepay_merchant_key_leave_blank": "Leave blank to keep the current key.",
+  "payment_collection_status": "Payment collection status",
+  "enable_payment_collection_through_sbiepay": "Enable payment collection through SBI ePay",
+  "enabled": "Enabled",
+  "disabled": "Disabled",
+  "save": "Save",
+  "sbiepay_merchant_created": "SBI ePay merchant configured",
+  "sbiepay_merchant_creation_failed": "Failed to configure SBI ePay merchant",
+  "sbiepay_merchant_updated": "SBI ePay merchant updated",
+  "sbiepay_merchant_update_failed": "Failed to update SBI ePay merchant",
+  "sbiepay_merchant_code_required": "Merchant code is required",
+  "sbiepay_merchant_key_required": "Merchant key is required",
+  "sbiepay_merchant_key_too_short": "Merchant key must be at least 16 characters"
+}
