@@ -1,14 +1,14 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme) theme(reference inline);
+
 @config '../tailwind.config.js';
 
 .care-sbiepay-container {
-  @import "tailwindcss";
+  @import "tailwindcss/preflight.css" layer(base);
+  @import "tailwindcss/utilities.css" layer(utilities);
 }
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-*/
+
 @layer base {
   *,
   ::after,
@@ -18,7 +18,6 @@
     border-color: var(--color-gray-200, currentcolor);
   }
 
-  /* Same as care_fe's base layer, scoped so the plug never restyles the host. */
   .care-sbiepay-container button:not(:disabled),
   .care-sbiepay-container [role="button"]:not(:disabled) {
     cursor: pointer;

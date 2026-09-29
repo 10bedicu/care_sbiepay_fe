@@ -38,6 +38,15 @@ export default defineConfig({
       output: {
         format: "esm",
       },
+      onwarn(warning, warn) {
+        if (
+          warning.code === "INVALID_ANNOTATION" &&
+          warning.id?.includes("/node_modules/zod/")
+        ) {
+          return;
+        }
+        warn(warning);
+      },
     },
   },
   resolve: {
